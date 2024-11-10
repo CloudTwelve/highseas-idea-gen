@@ -1,0 +1,1 @@
+# highseas-idea-gen
