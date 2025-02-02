@@ -5,12 +5,6 @@
         <script src="scripts.js"></script>
         <title>~ Idea Generator ~</title>
     </head>
-<!--
-    What should go in here? Maybe 3 parts:
-    - A function (A website that (...) and has (...))
-    - A theme (Galaxy-themed, Soft aesthetic)
-    Then a footer (what are you waiting for?)!
--->
     <body>
         <header>
             <div class="title">
@@ -25,20 +19,27 @@
             <div class="main" id="start">
                 <div class="main-inner">
                     <h1>Start Here!</h1>
-                    <p>Want to make a website but don't know where to start? This here is a website idea generator (not AI, though)!</p>
+                    <p>Want to make a website but don't know where to start? This here is a website idea generator (I asked ChatGPT to generate some ideas for diff levels)!</p>
+                  <p><strong>Select level of expertise in web dev:</strong></p>
+                  <label for="levels">Choose a level:</label>
+                    <select id="levels" name="levels">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
                     <button id="start-button">Generate</button>
                 </div>
             </div>
             <div class="main" id="Function">
                 <div class="main-inner">
                     <h1>Function</h1>
-                    <p>Hmm... What about a website that <var>function</var> and has <var></var> for <var></var></p>
+                    <p id="ideacont">Hmm... What about a website that ________ and _______.</span></p>
                 </div>
             </div>
             <div class="main" id="Function">
                 <div class="main-inner">
                     <h1>Theme</h1>
-                    <p></p>
+                  <p id="themecont">A(n) ______ theme and a(n) ______ effect.</p>
                 </div>
             </div>
         </div>
