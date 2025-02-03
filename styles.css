@@ -24,6 +24,11 @@ header {
     background-color: lightgrey;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
 
 .title {
     font-size: 2rem;
