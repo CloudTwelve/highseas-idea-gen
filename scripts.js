@@ -39,6 +39,21 @@ const advancedWebsites = [
 const themeEffects = [
   ["Cyberpunk", "Neon glow effects"],
   ["Minimalist", "Smooth fade-in transitions"],
+  ["Nature", "Parallax scrolling"],
+  ["Retro 80s", "CRT scanline effect"],
+  ["Sci-Fi", "Holographic UI elements"],
+  ["Fantasy", "Glassmorphism design"],
+  ["Dark Academia", "Typewriter text animation"],
+  ["Steampunk", "Snowfall particle effect"],
+  ["Modern Corporate", "Scroll-triggered animations"],
+  ["Vintage Newspaper", "Background video loops"],
+];
+
+const genRandomXY = (array) => {
+  let one = Math.floor(Math.random() * array.length);
+  let two = Math.floor(Math.random() * array.length);
+  return [array[one][0], array[two][1]];
+}
 
 let genButton = document.querySelector("button");
 let dropdown = document.querySelector("#levels");
